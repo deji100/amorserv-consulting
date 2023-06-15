@@ -24,7 +24,7 @@
 }
 
 .header-bg .header .content {
-    width: 700px;
+    width: 600px;
     height: 100%;
     padding-top: 30px;
     position: relative;
@@ -44,7 +44,7 @@
 
 .header-bg .header .content p {
     color: #1A202C;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 .header-bg .header .content button {
