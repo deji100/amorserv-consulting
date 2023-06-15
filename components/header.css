@@ -36,7 +36,7 @@
 }
 
 .header-bg .header .content h1 {
-    width: 100%;
+    /* width: 100%; */
     color: #226666;
     font-size: 3vw;
     font-weight: bold;
@@ -44,7 +44,7 @@
 
 .header-bg .header .content p {
     color: #1A202C;
-    font-size: 1.1vw;
+    font-size: 1em;
 }
 
 .header-bg .header .content button {
@@ -69,6 +69,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 .header-bg .header .image img {
@@ -76,7 +77,6 @@
     height: 100%;
     object-fit: cover;
 }
-
 
 
 

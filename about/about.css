@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.about-intro {
+    width: 99%;
+    margin: auto;;
+    padding: 40px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 40px;
+    background: linear-gradient(white, #FAFAFB)
+}
+
+.about-intro .intro h2 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3vw;
+    font-weight: bold;
+    color: #226666;
+}
+
+.about-intro .intro article {
+    color: #3D3D3D;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.vmv {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+
+.vmv ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vmv ul li {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px
+}
+
+.vmv ul li .image, .vmv ul li h2 {
+    text-align: center;
+}
+
+.vmv ul li p {
+    padding-left: 20px;
+}
+
+
+.team {
+    width: 90%;
+    position: relative;
+    top: 100px;
+}
+
+.team h2 {
+    text-align: center;
+    color: #486284;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3vw;
+    font-weight: bold;
+}
+
+.team .members .first-row {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.team .members .first-row .member {
+    text-align: left;
+}
+
+.team .members .first-row .member .detail {
+    line-height: 1.2px;
+}
+
+.team .members .first-row .member .image {
+    background: #EAEAEA;
+    border-radius: 10px;
+}
+
+.team .members .first-row .member .image img {
+    max-width: 100%;
+    height: auto;
+}
