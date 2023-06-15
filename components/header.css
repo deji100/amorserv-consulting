@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     position: relative;
-    /* top: 95px; */
 }
 
 .header-bg .header {
@@ -20,8 +19,7 @@
     height: auto;
     padding-top: 50px;
     display: flex;
-    align-items: center;
-    align-items: end;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -102,10 +100,6 @@
 }
 
 @media screen and (max-width: 550px) {
-    .header-bg .header .content {
-        gap: 5px;
-    }
-
     .header-bg .header .content button {
         width: 70px;
         font-size: 8px;
