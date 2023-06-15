@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.header{
+    height: 100vh;
+    background: #FAFAFB;
+}
+.header nav{
+    background: #ffffff !important;
+}
+.navbar{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.navbar .nav-item .nav-link:hover{
+    border-bottom: 2px solid #B13557;
+    transition: .15s;
+    animation: ease-in;
+}
+.nav-link{
+    border: none !important;
+}
+.container-fluid{
+    margin: 0 30px !important;
+}
+.navbar-nav{
+    font-size: 14px;
+    color: #555555;
+    font-weight: 600;
+}
+.navbar-nav li .dropdown-menu h6{
+    font-size: 14px !important;
+    font-weight: bold;
+}
+.navbar-nav li .dropdown-menu p{
+    font-size: 12px !important;
+}
+.head h5{
+    color: #226666;
+}
+.head p{
+    color: #1A202C;
+    font-weight: 500;
+}
+.head .btn{
+    background-color: #B13557;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.head .btn:hover {
+    color: #FFFFFF !important;
+    background-color: #d15072 !important;
+    border-color: none !important;
+}
+#sec-2 h3{
+    color: #226666 !important;
+    font-weight: bold;
+}
+#sec-3{
+    background: #FAFAFB !important;
+}
+#sec-3 h3{
+    color: #226666 !important;
+    font-weight: bold;
+}
+#sec-3 p{
+    color: #555555 !important;
+    font-size: 14px;
+}
+#sec-4 p{
+    color: #555555 !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+#sec-4 .btn{
+    background-color: #B13557;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+#sec-4 .btn:hover {
+    color: #FFFFFF !important;
+    background-color: #d15072 !important;
+    border-color: none !important;
+}
+#sec-5{
+    background-color: #EFF3FD !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #1A202C;
+}
+footer h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+footer .border-top{
+    border-top: 1px solid rgba(72, 98, 132, 0.16) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
