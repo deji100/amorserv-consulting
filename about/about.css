@@ -172,8 +172,18 @@
 /* Media Queries */
 
 @media screen and (max-width: 1050px) {
+    .team .members .first-row .member .image {
+        max-width: 200px;
+        height: 200px;
+    }
+
     .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
         font-size: 2.5vw;
+    }
+
+    .partnership ul li {
+        max-width: 130px;
+        height: 130px;
     }
 }
 
