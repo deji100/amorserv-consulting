@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+#port-1 .port-card{
+    background: #FAFAFB !important;
+    box-shadow: 0px 4px 4px 0px #00000040 !important;
+}
+#port-1 .card-title{
+    color: #226666;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+#port-1 .card-body p{
+    color: #555555;
+    font-size: 12px !important;
+    font-weight: 400;
+}
