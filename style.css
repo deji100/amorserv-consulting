@@ -73,7 +73,6 @@ body{
 }
 #sec-5{
     background: #EFF3FD !important;
-
 }
 #sec-5 h3{
     color: #226666 !important;
@@ -82,6 +81,11 @@ body{
 #sec-5 p{
     color: #555555 !important;
     font-size: 14px;
+}
+#sec-5 a{
+    text-decoration: none;
+    color: #555555;
+    font-weight: 500;
 }
 #sec-5 .btn-serv{
     background-color: #D9D9D9;
@@ -97,8 +101,9 @@ body{
 .btn-real{
     background-color: #B13557 !important;
     color: #FFFFFF !important;
-    font-size: 16px;
+    font-weight: 500 !important;
     border: none !important;
+    padding: 10px 30px !important;
 }
 .btn-real:hover {
     color: #FFFFFF !important;
