@@ -4,12 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 section.service-feat  {
     width: 100%;
     margin: auto;
-    font-family: 'Poppins', sans-serif;
 }
 
 section.service-feat h2 {
@@ -70,6 +70,97 @@ section.service-feat .contents .left .detail h5, section.service-feat .contents 
     color: #226666;
 }
 
+section.trust-agency {
+    width: 100%;
+    background: #EFF3FD;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 30px;
+}
+
+section.trust-agency h4 {
+    text-align: center;
+    font-weight: bold;
+    color: #226666;
+    margin-bottom: 80px;
+}
+
+section.trust-agency .contents {
+    width: 100%;
+}
+
+section.trust-agency .contents .detail {
+    max-width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+section.trust-agency .contents .detail div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.trust-agency .contents .detail div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: 20px;
+    margin-bottom: 60px;
+}
+
+section.trust-agency .contents .detail ul li::before {
+    content: "\2022";
+    color: #CA1E52;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+section.trust-agency .contents .detail div div {
+    width: 90%;
+    display: flex;
+    align-items: start;
+    padding-left: 2px;
+    position: relative;
+}
+
+section.trust-agency .contents .detail div div button {
+    height: auto;
+    padding: 10px;
+    background: #B13557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+/* section.trust-agency .contents .detail div ul li */
+
+section.trust-agency .contents .detail .image {
+    height: auto;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    z-index: 100;
+}
+
+section.trust-agency .contents .detail .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
 
 /* Media Queries */
 
@@ -94,6 +185,45 @@ section.service-feat .contents .left .detail h5, section.service-feat .contents 
     section.service-feat .contents .left .detail h5, section.service-feat .contents .right .detail h5 {
         font-size: .9em;
     }
+
+    section.trust-agency .contents .detail div ul {
+        margin-bottom: 40px;
+        gap: 10px;
+        font-size: .9em
+    }
+
+    section.trust-agency .contents .detail div div{
+        padding-left: 16px;
+    }
+
+    section.trust-agency .contents .detail div div button {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    section.trust-agency .contents .detail div ul {
+        gap: 10px;
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    section.trust-agency .contents .detail {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    section.trust-agency .contents .detail div ul {
+        top: -40px;
+    }
+
+    section.trust-agency .contents .detail div div {
+        justify-content: center;
+        align-items: center;
+        top: -30px;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
@@ -103,7 +233,6 @@ section.service-feat .contents .left .detail h5, section.service-feat .contents 
 
     section.service-feat .contents .left, section.service-feat .contents .right {
         height: 300px;
-
     }
 }
 

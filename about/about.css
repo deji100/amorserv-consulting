@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about-intro {
@@ -18,7 +19,6 @@
 
 .about-intro .intro h2 {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
     font-size: 2.3vw;
     font-weight: bold;
     color: #226666;
@@ -54,7 +54,6 @@
 }
 
 .vmv ul li h2 {
-    font-family: 'Poppins', sans-serif;
     font-size: 2.3vw;
     font-weight: bold;
     color: #226666;
@@ -78,7 +77,6 @@
 .team h2 {
     text-align: center;
     color: #486284;
-    font-family: 'Poppins', sans-serif;
     font-size: 2.3vw;
     font-weight: bold;
 }
@@ -127,7 +125,6 @@
 .partnership h2 {
     text-align: center;
     color: #226666;
-    font-family: 'Poppins', sans-serif;
     font-size: 2.3vw;
     font-weight: bold;
     margin-bottom: 50px;
