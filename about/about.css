@@ -49,7 +49,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 10px
+}
+
+.vmv ul li h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3vw;
+    font-weight: bold;
+    color: #226666;
 }
 
 .vmv ul li .image, .vmv ul li h2 {
@@ -76,7 +84,7 @@
 }
 
 .team .members .first-row {
-    padding-top: 70px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     gap: 5px;
@@ -90,14 +98,93 @@
 
 .team .members .first-row .member .detail {
     line-height: 1.2px;
+    margin-top: 10px;
+}
+
+.team .members .first-row .member .detail h6 {
+    font-weight: bold;
 }
 
 .team .members .first-row .member .image {
     background: #EAEAEA;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
 }
 
 .team .members .first-row .member .image img {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+.partnership {
+    width: 100%;
+    position: relative;
+    top: 180px;
+    margin-bottom: 250px;
+}
+
+.partnership h2 {
+    text-align: center;
+    color: #226666;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.3vw;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.partnership div {
+    background: #EFF3FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnership ul {
+    width: 90%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+.partnership ul li {
+    max-width: 192px;
+    height: 192px;
+    border-radius: 10px;
+    background: #DDE0E4;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.partnership ul li img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
+        font-size: 3.5vw;
+    }
+
+    .vmv ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 }

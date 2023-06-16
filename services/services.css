@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.service-feat  {
+    width: 100%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.service-feat h2 {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    color: #226666;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+section.service-feat .contents {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+section.service-feat .contents .left, section.service-feat .contents .right {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section.service-feat .contents .right {
+    background: #FAFAFB;
+}
+
+section.service-feat .contents .left .images, section.service-feat .contents .right .images {
+    width: 500px;
+    height: 500px;
+}
+
+section.service-feat .contents .left .images img, section.service-feat .contents .right .images img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+section.service-feat .contents .left .detail, section.service-feat .contents .right .detail {
+    width: 600px;
+}
+
+section.service-feat .contents .left .detail article, section.service-feat .contents .right .detail article {
+    text-align: justify;
+    font-size: 1em;
+}
+
+section.service-feat .contents .left .detail h5, section.service-feat .contents .right .detail h5 {
+    font-weight: bold;
+    color: #226666;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+    section.service-feat h2 {
+        width: 90%;
+        font-size: 2.7vw;
+    }
+
+    section.service-feat .contents {
+        padding-top: 30px;
+    }
+
+    section.service-feat .contents .left, section.service-feat .contents .right {
+        height: 400px;
+    }
+
+    section.service-feat .contents .left .detail article, section.service-feat .contents .right .detail article {
+        font-size: .7em;
+    }
+
+    section.service-feat .contents .left .detail h5, section.service-feat .contents .right .detail h5 {
+        font-size: .9em;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    section.service-feat .contents {
+        padding-top: 0px;
+    }
+
+    section.service-feat .contents .left, section.service-feat .contents .right {
+        height: 300px;
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    section.service-feat .contents .left, section.service-feat .contents .right {
+        height: auto;
+        flex-direction: column;
+        gap: 0px;
+        margin-bottom: 20px;
+        padding-bottom: 40px;
+    }
+
+    section.service-feat .contents .right {
+        flex-direction: column-reverse;
+    }
+
+    section.service-feat .contents .left .detail, section.service-feat .contents .right .detail {
+        width: 100%;
+    }
+
+    section.service-feat .contents .left .detail h5, section.service-feat .contents .right .detail h5 {
+        font-size: .8em;
+    }
+
+    section.service-feat .contents .left .images, section.service-feat .contents .right .images {
+        width: 250px;
+        height: 250px;
+    }
+
+    section.service-feat h2 {
+        width: 70%;
+        font-size: 2.8vw;
+        margin-bottom: 30px;
+    }
+}
