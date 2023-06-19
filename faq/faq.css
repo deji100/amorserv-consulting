@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-top: 60px;
+    position: relative;
+}
+
+.faq h2 {
+    width: 600px;
+    font-size: 2vw;
+    font-weight: bold;
+    color: #226666;
+    text-align: center;
+}
+
+.faq .questions {
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.faq .questions li {
+    width: 100%;
+    margin: auto;
+    position: inherit;
+    border-bottom: .5px solid #EAECF0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq .questions li .question {
+    width: 100%;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq .questions li .question h6 {
+    color: #226666;
+    font-weight: light;
+}
+
+.faq .questions li .question div i {
+    cursor: pointer;
+}
+
+.faq .questions li .question div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.faq .questions li .question div i {
+    cursor: pointer;
+    position: absolute;
+}
+
+.faq .questions li .question div .icon-minus {
+    display: none
+}
+
+.faq .questions li p {
+    max-height: 0;
+    overflow: hidden;
+    text-align: justify;
+    color: #667085;
+    transition: all .5s ease-out;
+}
+
+.more-questions {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.more-questions .experts {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.more-questions .experts h5 {
+    color: #226666;
+    font-size: .1.3em;
+    font-weight: bold;
+}
+
+.more-questions .experts p {
+    text-align: center;
+    color: #555555;
+}
+
+.more-questions .experts button {
+    height: auto;
+    padding: 10px;
+    background: #B13557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.more-questions .experts button:hover {
+    transform: scale(1.05);
+}
+
+section.bg {
+    background: #EFF3FD;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+    .faq h2 {
+        width: 60%;
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .faq .questions {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    
+}
+
+@media screen and (max-width: 750px) {
+
+}
+
+@media screen and (max-width: 550px) {
+    .faq .questions {
+        width: 95%;
+    }
+}

@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.header-bg .header .abt-img {
+    width: 1200px;
+}
+
 .about-intro {
     width: 99%;
     margin: auto;;
