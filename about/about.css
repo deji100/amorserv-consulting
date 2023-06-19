@@ -23,7 +23,7 @@
 
 .about-intro .intro h2 {
     text-align: center;
-    font-size: 2.3vw;
+    font-size: 2em;
     font-weight: bold;
     color: #226666;
 }
@@ -58,7 +58,7 @@
 }
 
 .vmv ul li h2 {
-    font-size: 2.3vw;
+    font-size: 1em;
     font-weight: bold;
     color: #226666;
 }
@@ -81,7 +81,7 @@
 .team h2 {
     text-align: center;
     color: #486284;
-    font-size: 2.3vw;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -129,7 +129,7 @@
 .partnership h2 {
     text-align: center;
     color: #226666;
-    font-size: 2.3vw;
+    font-size: 2em;
     font-weight: bold;
     margin-bottom: 50px;
 }
@@ -179,7 +179,7 @@
     }
 
     .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
-        font-size: 2.5vw;
+        font-size: 1.5em;
     }
 
     .partnership ul li {
@@ -190,7 +190,7 @@
 
 @media screen and (max-width: 850px) {
     .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
-        font-size: 3.5vw;
+        font-size: 1.2em;
     }
 
     .vmv ul {
