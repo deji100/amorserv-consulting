@@ -89,7 +89,7 @@
     padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
-    gap: 5px;
+    gap: 15px;
     flex-wrap: wrap;
     -ms-flex-wrap: wrap;
 }
@@ -111,12 +111,24 @@
     background: #EAEAEA;
     border-radius: 10px;
     box-shadow: 2px 2px 5px gray;
+    cursor: pointer;
 }
 
 .team .members .first-row .member .image img {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+    filter: brightness(1) saturate(0%);
+    --webkit-filter: brightness(1) saturate(0%);
+}
+
+.team .members .first-row .member:hover {
+    transform: scale(1.1);
+}
+
+.team .members .first-row .member .image img:hover {
+    filter: brightness(1.1) saturate(100%);
+    --webkit-filter: brightness(1.1) saturate(100%);
 }
 
 .partnership {
@@ -162,10 +174,21 @@
     justify-content: center;
 }
 
+.partnership ul li:hover {
+    transform: scale(1.05);
+}
+
 .partnership ul li img {
     width: 100%;
     height: auto;
     object-fit: contain;
+    filter: brightness(1) saturate(0%);
+    --webkit-filter: brightness(1) saturate(0%);
+}
+
+.partnership ul li img:hover {
+    filter: brightness(1.1) saturate(100%);
+    --webkit-filter: brightness(1.1) saturate(100%);
 }
 
 
