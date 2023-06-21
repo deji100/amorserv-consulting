@@ -164,7 +164,7 @@ footer .border-top{
 
 /* Media Queries */
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .client-wrapper .client-carousel {
         display: grid;
         grid-auto-flow: column;

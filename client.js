@@ -1,34 +1,34 @@
-const carousel = document.querySelector(".client-carousel");
-const arrowIcons = document.querySelectorAll(".client-wrapper i");
-const firstCardWidth = document.querySelector(".client-wrapper img").offsetWidth;
+const client_carousel = document.querySelector(".client-carousel");
+const client_arrowIcons = document.querySelectorAll(".client-wrapper i");
+const client_firstCardWidth = document.querySelector(".client-wrapper img").offsetWidth;
 
-let isDragging = false, startX, startScrollLeft;
+let isClientDragging = false, clientStartX, clientStartScrollLeft;
 
-arrowIcons.forEach(icon => {
+client_arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
-        carousel.scrollLeft += icon.id === "left" ? -firstCardWidth : firstCardWidth;
+        client_carousel.scrollLeft += icon.id === "left" ? -client_firstCardWidth : client_firstCardWidth;
     })
 })
 
-const dragging = (e) => {
-    if (!isDragging) return;
+const clientDragging = (e) => {
+    if (!isClientDragging) return;
     e.preventDefault();
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
-    carousel.classList.add("dragging");
+    client_carousel.scrollLeft = clientStartScrollLeft - (e.pageX - clientStartX);
+    client_carousel.classList.add("dragging");
 }
 
-const dragStart = (e) => {
-    isDragging = true;
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft
+const clientDragStart = (e) => {
+    isClientDragging = true;
+    clientStartX = e.pageX;
+    clientStartScrollLeft = client_carousel.scrollLeft
 }
 
-const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove("dragging");
+const clientDragStop = () => {
+    isClientDragging = false;
+    client_carousel.classList.remove("dragging");
 }
 
 
-carousel.addEventListener("mouseup", dragStop);
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
+client_carousel.addEventListener("mouseup", clientDragStop);
+client_carousel.addEventListener("mousedown", clientDragStart);
+client_carousel.addEventListener("mousemove", clientDragging);
