@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    max-width: 100%;
+    padding: 0 35px;
+    position: relative;
+}
+
+.wrapper i {
+    top: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #B13557;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child {
+    left: 20px;
+    z-index: 10;
+}
+
+.wrapper i:last-child {
+    right: 25px;
+    z-index: 10;
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 3);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 242px;;
+    list-style: none;
+    background: #D3DCE7;
+    border-radius: 8px;
+    padding: 10px 25px;
+    cursor: pointer;
+    position: relative;
+}
+
+.carousel .card:hover {
+    background: #DDE0E4;
+    transform: scale(1.05);
+}
+
+.card .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.card .info .name-img h4 {
+    color: #226666;
+    font-weight: light;
+    font-size: 1em
+}
+
+
+.card .info .name-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+
+.card .info p {
+    color: #B13557;
+}
+
+.card .image img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+        grid-auto-columns: calc(100% / 2);
+    } 
+
+    .card .info {
+        justify-content: space-between;
+    }
+
+    .card .info .name-img {
+        gap: 30px
+    }
+
+    .carousel .card {
+        padding: 10px 25px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+    }
+}

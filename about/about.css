@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-bg .header .abt-img {
+    width: 1200px;
+}
+
+.about-intro {
+    width: 99%;
+    margin: auto;;
+    padding: 40px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 40px;
+    background: linear-gradient(white, #FAFAFB)
+}
+
+.about-intro .intro h2 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #226666;
+}
+
+.about-intro .intro article {
+    color: #3D3D3D;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.vmv {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    top: 40px;
+}
+
+.vmv ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.vmv ul li {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px
+}
+
+.vmv ul li h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #226666;
+}
+
+.vmv ul li .image, .vmv ul li h2 {
+    text-align: center;
+}
+
+.vmv ul li p {
+    padding-left: 20px;
+}
+
+
+.team {
+    width: 90%;
+    position: relative;
+    top: 100px;
+}
+
+.team h2 {
+    text-align: center;
+    color: #486284;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.team .members .first-row {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.team .members .first-row .member {
+    text-align: left;
+}
+
+.team .members .first-row .member .detail {
+    line-height: 1.2px;
+    margin-top: 10px;
+}
+
+.team .members .first-row .member .detail h6 {
+    font-weight: bold;
+}
+
+.team .members .first-row .member .image {
+    background: #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    cursor: pointer;
+}
+
+.team .members .first-row .member .image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(1) saturate(0%);
+    --webkit-filter: brightness(1) saturate(0%);
+}
+
+.team .members .first-row .member:hover {
+    transform: scale(1.1);
+}
+
+.team .members .first-row .member .image img:hover {
+    filter: brightness(1.1) saturate(100%);
+    --webkit-filter: brightness(1.1) saturate(100%);
+}
+
+.partnership {
+    width: 100%;
+    position: relative;
+    top: 180px;
+    margin-bottom: 250px;
+}
+
+.partnership h2 {
+    text-align: center;
+    color: #226666;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.partnership div {
+    background: #EFF3FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partnership ul {
+    width: 90%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+.partnership ul li {
+    max-width: 192px;
+    height: 192px;
+    border-radius: 10px;
+    background: #DDE0E4;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.partnership ul li:hover {
+    transform: scale(1.05);
+}
+
+.partnership ul li img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    filter: brightness(1) saturate(0%);
+    --webkit-filter: brightness(1) saturate(0%);
+}
+
+.partnership ul li img:hover {
+    filter: brightness(1.1) saturate(100%);
+    --webkit-filter: brightness(1.1) saturate(100%);
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+    .team .members .first-row .member .image {
+        max-width: 200px;
+        height: 200px;
+    }
+
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
+        font-size: 1.5em;
+    }
+
+    .partnership ul li {
+        max-width: 130px;
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
+        font-size: 1.2em;
+    }
+
+    .vmv ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}

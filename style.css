@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+.header nav{
+    background: #ffffff !important;
+}
+.navbar{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.navbar .nav-item .nav-link:hover{
+    border-bottom: 2px solid #B13557;
+    transition: .15s;
+    animation: ease-in;
+}
+.nav-link{
+    border: none !important;
+}
+.container-fluid{
+    margin: 0 30px !important;
+}
+.navbar-nav{
+    font-size: 14px;
+    color: #555555;
+    font-weight: 600;
+}
+.navbar-nav li .dropdown-menu h6{
+    font-size: 14px !important;
+    font-weight: bold;
+}
+.navbar-nav li .dropdown-menu p{
+    font-size: 12px !important;
+}
+.head h5{
+    color: #226666;
+}
+.head p{
+    color: #1A202C;
+    font-weight: 500;
+}
+.head .btn{
+    background-color: #B13557;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+.head .btn:hover {
+    color: #FFFFFF !important;
+    background-color: #d15072 !important;
+    border-color: none !important;
+}
+#sec-2 h3{
+    color: #226666 !important;
+    font-weight: bold;
+}
+#sec-3{
+    background: #FAFAFB !important;
+}
+#sec-3 h3{
+    color: #226666 !important;
+    font-weight: bold;
+}
+#sec-3 p{
+    color: #555555 !important;
+    font-size: 14px;
+}
+#sec-4 p{
+    color: #555555 !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+#sec-5{
+    background: #EFF3FD !important;
+}
+#sec-5 h3{
+    color: #226666 !important;
+    font-weight: bold;
+}
+#sec-5 p{
+    color: #555555 !important;
+    font-size: 14px;
+}
+#sec-5 a{
+    text-decoration: none;
+    color: #555555;
+    font-weight: 500;
+}
+#sec-5 .btn-serv{
+    background-color: #D9D9D9;
+    color: #555555;
+    font-size: 17px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+#sec-7 h3{
+    color: #226666;
+
+}
+.btn-real{
+    background-color: #B13557 !important;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+    border: none !important;
+    padding: 10px 30px !important;
+}
+.btn-real:hover {
+    color: #FFFFFF !important;
+    background-color: #d15072 !important;
+    border-color: none !important;
+    transform: scale(1.05);
+}
+.bg-card{
+    background: #DDE0E4 !important;
+    border: none !important;
+}
+.bg-card small{
+    color: #B13557 !important;
+    font-weight: 500;
+}
+.bg-card span{
+    color: #226666 !important;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background: #1A202C;
+}
+footer h5{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding-bottom: 15px;
+}
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+footer p{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+footer .border-top{
+    border-top: 1px solid rgba(72, 98, 132, 0.16) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+

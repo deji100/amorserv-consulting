@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-bg {
+    width: 100%;
+    background: #FAFAFB;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header-bg .header {
+    width: 90%;
+    height: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-bg .header .content {
+    width: 600px;
+    height: 80%;
+    padding-top: 30px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header-bg .header .content h1 {
+    /* width: 100%; */
+    color: #226666;
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+.header-bg .header .content p {
+    color: #1A202C;
+    font-size: 1em;
+}
+
+.header-bg .header .content button {
+    width: 150px;
+    height: auto;
+    padding: 10px;
+    background: #B13557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2vw;
+    box-shadow: 2px 2px 4px gray;
+}
+
+.header-bg .header .content button:hover {
+    transform: scale(1.05);
+}
+
+.header-bg .header .image {
+    width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-bg .header .image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Media queries */
+
+@media screen and (max-width: 1050px) {
+    .header-bg .header {
+        padding-top: 0px;
+    }
+
+    .header-bg .header .content {
+        margin-top: 50px;
+    }
+
+    .header-bg .header .content h1 {
+        font-size: 3vw;
+    }
+
+    .header-bg .header .content p {
+        font-size: .7em;
+    }
+
+    .header-bg .header .content button {
+        width: 100px;
+        font-size: 14px;
+        position: relative;
+        bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header-bg .header .content {
+        gap: 5px;
+    }
+
+    .header-bg .header .content button {
+        width: 100px;
+        font-size: 12px;
+        position: relative;
+        bottom: 10px;
+    }
+
+    .header-bg .header .content h1 {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-bg .header .content button {
+        width: 70px;
+        font-size: 8px;
+    }
+
+    .header-bg .header .content h1 {
+        font-size: 3vw;
+    }
+}
