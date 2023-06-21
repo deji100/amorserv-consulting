@@ -18,3 +18,4 @@ for (let i = 0; i < closeElements.length; i++) {
         contents[i].style.maxHeight = 0;
     })
 }
+

@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header-bg {
@@ -33,7 +34,6 @@
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .header-bg .header .content h1 {
