@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif !important;
 }
 
@@ -124,29 +125,6 @@ body{
     font-weight: 500;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer{
     background: #1A202C;
 }
@@ -169,9 +147,89 @@ footer .border-top{
     border-top: 1px solid rgba(72, 98, 132, 0.16) !important;
 }
 
+.client-wrapper {
+    max-width: 100%;
+    padding: 0 35px;
+    position: relative;
+}
+
+.client-wrapper .client-carousel {
+    display: flex;
+}
+
+.client-wrapper i {
+    display: none;
+}
 
 
+/* Media Queries */
 
+@media screen and (max-width: 850px) {
+    .client-wrapper .client-carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc(100% / 3);
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        scrollbar-width: 0;
+    }
+
+    .client-wrapper i {
+        display: inline;
+        top: 20%;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #B13557;
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        line-height: 30px;
+        transform: translateY(-50%);
+    }
+
+    .client-wrapper i:first-child {
+        left: 20px;
+        z-index: 10;
+    }
+    
+    .client-wrapper i:last-child {
+        right: 25px;
+        z-index: 10;
+    }
+
+    .client-carousel::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .client-carousel.dragging {
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+    
+    .client-carousel.dragging img {
+        cursor: grab;
+        user-select: none;
+    }
+
+    .client-carousel img {
+        width: 150px;
+        scroll-snap-align: start;
+        padding-left: 50px;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .client-wrapper .client-carousel {
+        grid-auto-columns: calc(100% / 2);
+        gap: 2px;
+    }
+}
 
 
 
