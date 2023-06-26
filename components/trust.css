@@ -52,6 +52,10 @@
     display: none;
 }
 
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
 .carousel.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;

@@ -161,73 +161,101 @@ footer .border-top{
     display: none;
 }
 
+.client-wrapper .client-carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% / 5);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.client-wrapper i {
+    display: inline;
+    top: 20%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #B13557;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    transform: translateY(-50%);
+}
+
+.client-wrapper i:first-child {
+    left: 20px;
+    z-index: 10;
+}
+
+.client-wrapper i:last-child {
+    right: 25px;
+    z-index: 10;
+}
+
+.client-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.client-carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.client-carousel.dragging img {
+    cursor: grab;
+    user-select: none;
+}
+
+.client-carousel img {
+    width: 150px;
+    scroll-snap-align: start;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
 
 /* Media Queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .client-wrapper .client-carousel {
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: calc(100% / 3);
-        gap: 16px;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        scrollbar-width: 0;
-    }
-
-    .client-wrapper i {
-        display: inline;
-        top: 20%;
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: #B13557;
-        color: white;
-        cursor: pointer;
-        text-align: center;
-        line-height: 30px;
-        transform: translateY(-50%);
-    }
-
-    .client-wrapper i:first-child {
-        left: 20px;
-        z-index: 10;
-    }
-    
-    .client-wrapper i:last-child {
-        right: 25px;
-        z-index: 10;
-    }
-
-    .client-carousel::-webkit-scrollbar {
-        display: none;
-    }
-    
-    .client-carousel.dragging {
-        scroll-snap-type: none;
-        scroll-behavior: auto;
-    }
-    
-    .client-carousel.dragging img {
-        cursor: grab;
-        user-select: none;
+        grid-auto-columns: calc(100% / 4);
+        gap: 2px;
     }
 
     .client-carousel img {
-        width: 150px;
-        scroll-snap-align: start;
-        padding-left: 50px;
-        cursor: pointer;
-        position: relative;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .client-wrapper .client-carousel {
+        grid-auto-columns: calc(100% / 4);
+        gap: 2px;
+    }
+
+    .client-carousel img {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
 @media screen and (max-width: 550px) {
     .client-wrapper .client-carousel {
-        grid-auto-columns: calc(100% / 2);
+        grid-auto-columns: calc(100% / 3);
         gap: 2px;
+    }
+
+    .client-carousel img {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
