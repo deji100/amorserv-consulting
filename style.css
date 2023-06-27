@@ -148,7 +148,7 @@ footer .border-top{
 }
 
 .client-wrapper {
-    max-width: 93%;
+    width: 90%;
     padding: 0 35px;
     margin: 0 auto;
     position: relative;

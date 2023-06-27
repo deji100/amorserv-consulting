@@ -10,7 +10,7 @@ client_arrowIcons.forEach(icon => {
         client_carousel.scrollLeft += icon.id === "left" ? -client_firstCardWidth : client_firstCardWidth;
         const timeout = setTimeout(() => {
             isClientClicking = false;
-        }, 5000)
+        }, 3000)
 
         return () => clearTimeout(timeout());
     })
@@ -48,7 +48,7 @@ const clientAutoPlay = () => {
     return () => clearInterval(interval);
 };
 
-clientAutoPlay();
+onload = clientAutoPlay;
 
 // const infiniteScroll = () => {
 //     if (client_carousel.scrollLeft === 0) {
