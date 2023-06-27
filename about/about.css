@@ -29,6 +29,7 @@
 }
 
 .about-intro .intro article {
+    padding-top: 15px;
     color: #3D3D3D;
     text-align: justify;
     font-size: 1em;
@@ -42,13 +43,13 @@
     top: 40px;
 }
 
-.vmv ul {
+.vmv .ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
 
-.vmv ul li {
+.vmv .ul div {
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -57,18 +58,20 @@
     gap: 10px
 }
 
-.vmv ul li h2 {
+.vmv .ul div h2 {
     font-size: 1.5em;
     font-weight: bold;
     color: #226666;
 }
 
-.vmv ul li .image, .vmv ul li h2 {
+.vmv .ul div .image, .vmv .ul div h2 {
     text-align: center;
 }
 
-.vmv ul li p {
-    padding-left: 20px;
+.vmv .ul div p {
+    /* margin: auto; */
+    text-align: justify;
+    /* padding-left: 20px; */
 }
 
 
@@ -201,7 +204,7 @@
         height: 200px;
     }
 
-    .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv .ul div h2 {
         font-size: 1.5em;
     }
 
@@ -212,13 +215,33 @@
 }
 
 @media screen and (max-width: 850px) {
-    .about-intro .intro h2, .team h2, .partnership h2, .vmv ul li h2 {
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv .ul div h2 {
         font-size: 1.2em;
     }
 
-    .vmv ul {
+    .vmv .ul {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about-intro .intro h2, .team h2, .partnership h2, .vmv .ul div h2 {
+        font-size: 18px;
+    }
+
+    .about-intro {
+        padding: 20px
+    }
+
+    .vmv .ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .team .members .first-row .member .detail {
+        text-align: center;
     }
 }

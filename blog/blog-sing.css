@@ -22,6 +22,7 @@
 
 .blog-contents .content .text {
     max-width: 70%;
+    padding: 20px;
     text-align: justify;
     font-size: .9em;
     line-height: 2;
@@ -78,19 +79,20 @@
 }
 
 .blog-contents .content .text .comments-form form textarea {
+    width: 100%;
     border: .3px solid #0089FF;
     outline: #0089FF;
-    padding: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .blog-contents .content .text .comments-form form button {
     border: none;
-    background: #226666;
+    background: #B13557;
     color: white;
     padding: 10px;
     border-radius: 5px;
     float: right;
-    margin-right: 40px;
 }
 
 .blog-contents .content .text .comments-form form button:hover {
@@ -259,5 +261,22 @@
 }
 
 @media screen and (max-width: 550px) {
-    
+    .blog-contents .content .text .comments-form .comment p {
+        width: 100%;
+    }
+
+    .blog-contents .content .text .comments-form form {
+        width: 100%;
+    }
+
+    .blog-contents .content .text .comments-form form button {
+        float: left;
+    }
+
+    .blog-contents .content .text .paragraph.special .inline-p img {
+        width: 100%;
+        height: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
 }
