@@ -95,10 +95,6 @@
     float: right;
 }
 
-.blog-contents .content .text .comments-form form button:hover {
-    transform: scale(1.05)
-}
-
 .blog-contents .content .posts-tags {
     width: 100%;
     display: flex;
