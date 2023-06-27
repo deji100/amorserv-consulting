@@ -8,7 +8,11 @@ client_arrowIcons.forEach(icon => {
     icon.addEventListener("click", () => {
         isClientClicking = true;
         client_carousel.scrollLeft += icon.id === "left" ? -client_firstCardWidth : client_firstCardWidth;
-        isClientClicking = false;
+        const timeout = setTimeout(() => {
+            isClientClicking = false;
+        }, 5000)
+
+        return () => clearTimeout(timeout());
     })
 })
 
