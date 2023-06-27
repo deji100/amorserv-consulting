@@ -51,12 +51,12 @@
 .header-bg .header .content button {
     width: 150px;
     height: auto;
-    padding: 10px 15px;
+    padding: 10px 10px;
     background: #B13557;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1.2vw;
+    font-size: 1em;
     box-shadow: 2px 2px 4px gray;
 }
 
