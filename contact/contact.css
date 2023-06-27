@@ -7,7 +7,9 @@ body{
 a{
     text-decoration: none !important;
 }
-
+.fa{
+    color: #B13557;
+}
 .map{
     display: flex;
     align-items: center;
