@@ -257,9 +257,9 @@ section.trust-agency .contents .detail .image img {
     }
 
     section.service-feat .contents .left .images, section.service-feat .contents .right .images {
-        margin-bottom: 20px;
-        width: 300px;
-        height: 300px;
+        margin-bottom: 0px;
+        width: 250px;
+        height: 250px;
     }
 
     section.service-feat h2 {

@@ -1,6 +1,6 @@
-const openElements = document.querySelectorAll(".faq .questions li .question div .icon-plus");
-const closeElements = document.querySelectorAll(".faq .questions li .question div .icon-minus");
-const contents = document.querySelectorAll(".faq .questions li p");
+const openElements = document.querySelectorAll(".faq .questions .li .question div .icon-plus");
+const closeElements = document.querySelectorAll(".faq .questions .li .question div .icon-minus");
+const contents = document.querySelectorAll(".faq .questions .li p");
 
 
 for (let i = 0; i < openElements.length; i++) {

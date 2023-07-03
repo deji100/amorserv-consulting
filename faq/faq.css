@@ -32,52 +32,55 @@
     flex-direction: column;
     gap: 40px;
     align-items: center;
+    justify-content: center;
     position: relative;
 }
 
-.faq .questions li {
+.faq .questions .li {
     width: 100%;
     margin: auto;
     position: inherit;
     border-bottom: .5px solid #EAECF0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
-.faq .questions li .question {
+.faq .questions .li .question {
     width: 100%;
-    padding-right: 30px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.faq .questions li .question h6 {
+.faq .questions .li .question h6 {
     color: #226666;
     font-weight: light;
 }
 
-.faq .questions li .question div i {
+.faq .questions .li .question div i {
     cursor: pointer;
 }
 
-.faq .questions li .question div {
+.faq .questions .li .question div {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
 
-.faq .questions li .question div i {
+.faq .questions .li .question div i {
     cursor: pointer;
     position: absolute;
 }
 
-.faq .questions li .question div .icon-minus {
+.faq .questions .li .question div .icon-minus {
     display: none
 }
 
-.faq .questions li p {
+.faq .questions .li p {
     max-height: 0;
     overflow: hidden;
     text-align: justify;
@@ -110,6 +113,7 @@
 }
 
 .more-questions .experts p {
+    padding-right: 10px;
     text-align: center;
     color: #555555;
 }
@@ -161,4 +165,26 @@ section.bg {
     .faq .questions {
         width: 95%;
     }
+
+    .faq .questions .li .question h6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .faq .questions .li .question div {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top:-15px;
+    }
+
+    .faq .questions .li p {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .faq h2 {
+        width: 100%;
+    }
+
 }

@@ -253,6 +253,11 @@ footer .border-top{
 }
 
 @media screen and (max-width: 550px) {
+    .client-wrapper {
+        width: 100%;
+        padding: 0 30px;
+    }
+
     .client-wrapper .client-carousel {
         grid-auto-columns: calc(100% / 3);
         gap: 2px;
