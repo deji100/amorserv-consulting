@@ -214,6 +214,7 @@ footer .border-top{
 
 .client-carousel.dragging img {
     cursor: grab;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -260,7 +261,20 @@ footer .border-top{
     }
 
     .client-carousel img {
-        padding-left: 30px;
-        padding-right: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .client-wrapper {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .client-wrapper i:first-child {
+        left: 10px;
+    }
+    
+    .client-wrapper i:last-child {
+        right: 10px;
     }
 }
