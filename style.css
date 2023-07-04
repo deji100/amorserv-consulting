@@ -98,7 +98,7 @@ body{
     font-size: 17px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
-    width: 400px;
+    
 }
 #sec-7 h3{
     color: #226666;
@@ -278,3 +278,8 @@ footer .border-top{
         right: 10px;
     }
 }
+@media (max-width: 990px) {
+    .col-md-aut {
+      max-width: 90% !important;
+    }
+  }
